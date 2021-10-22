@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    
+    <header style="width: 80%; border: 1px solid #000; margin: 20px auto;">
+        <ul style="display: flex; list-style: none;">
+            <li style="margin: 15px 30px;"><a href="#" style="text-decoration: none; color: inherit;">Home</a></li>
+            <li style="margin: 15px 30px;">|</li>
+            <li style="margin: 15px 30px;"><a href="#" style="text-decoration: none; color: inherit;">Generate Link</a></li>
+            <li style="margin: 15px 30px;">|</li>
+            <li style="margin: 15px 30px;"><a href="#" style="text-decoration: none; color: inherit;">Transaction History</a></li>
+            <li style="margin: 15px 30px;">|</li>
+            <li style="margin: 15px 30px;"><a href="#" style="text-decoration: none; color: inherit;">Policy</a></li>
+            <li style="margin: 15px 30px;">|</li>
+            <li style="margin: 15px 30px;"><a href="#" style="text-decoration: none; color: inherit;">Logout</a></li>
+        </ul>
+    </header>
+
+    <main style="width: 80%; display: flex; flex-wrap: wrap; margin: 0 auto;">
+        <div style="width: 30%;">
+            <figure>
+                <img src="img/code;.png" alt="" width="250" height="250">
+            </figure>
+            <input type="file" value="Upload Picture" style="margin: 20px 0;">
+        </div>
+        <div style="width: 70%;">
+            <table>
+                <tr>
+                    <td>
+                        <label for="title">Title Here</label>
+                    </td>
+                    <td style="width: 30px; padding: 5px 0; text-align: center;">:</td>
+                    <td>
+                        <input style="width: 70%;" value="MacBook Air $800" type="text" id="title">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="decription">Decription</label>
+                    </td>
+                    <td style="width: 30px; padding: 5px 0; text-align: center;">:</td>
+                    <td>
+                        <textarea style="width: 70%;" name="" id="decription" cols="30" rows="10"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="acc_number">Account Number</label>
+                    </td>
+                    <td style="width: 30px; padding: 5px 0; text-align: center;">:</td>
+                    <td>
+                        <input style="width: 70%;" value="1233467890" id="acc_number" type="number">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Bank</label>
+                    </td>
+                    <td style="width: 30px; padding: 5px 0; text-align: center;">:</td>
+                    <td>
+                        <input style="width: 70%;" value="HSBC" type="text" list="bank">
+                        <datalist id="bank">
+                            <option value="BCA"></option>
+                            <option value="BRI"></option>
+                            <option value="HSBC" selected></option>
+                            <option value="BNI"></option>
+                        </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Account Holder</label>
+                    </td>
+                    <td style="width: 30px; padding: 5px 0; text-align: center;">:</td>
+                    <td>
+                        <input style="width: 70%;" value="Rul Haxor" type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Transaction</label>
+                    </td>
+                    <td style="width: 30px; padding: 5px 0; text-align: center;">:</td>
+                    <td>
+                        <input type="number" min="1" max="10" value="1">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td style="padding: 2px 0;">
+                        <p>* if the transaction is for 3 person, choose 3 from the drop-down list</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td style="padding: 2px 0;">
+                        <input type="checkbox" style="background-color: green;">
+                        <label for="" style="color: green;">Send to Mobile Phone</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td style="padding: 2px 0;">
+                        <input type="checkbox" style="background-color: green;">
+                        <label for="" style="color: green;">Send to Email</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Send to Mobile Phone</label>
+                    </td>
+                    <td style="width: 30px; padding: 5px 0; text-align: center;">:</td>
+                    <td>
+                        <input style="width: 70%;" value="628123456789" type="tel">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Send to Email</label>
+                    </td>
+                    <td style="width: 30px; padding: 5px 0; text-align: center;">:</td>
+                    <td>
+                        <input style="width: 70%;" value="rulhaxor12@rocketmail.com" type="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td style="padding: 30px 0;">
+                        <input type="submit" style="background-color: green; padding: 5px 10px; color: #fff;" value="Generate Link">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </main>
+
+</body>
+</html>
