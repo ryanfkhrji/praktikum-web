@@ -33,7 +33,7 @@
             <figure>
                 <img src="img/macbook-air.jpg" alt="" width="250" height="250">
             </figure>
-            <input type="file" value="Upload Picture" style="margin: 20px 0;">
+            <input type="file" style="margin: 20px 0;">
         </div>
         <div style="width: 70%;">
             <table>
@@ -52,7 +52,7 @@
                     </td>
                     <td style="width: 30px; padding: 5px 0; text-align: center;">:</td>
                     <td>
-                        <textarea style="width: 70%;" name="" id="decription" cols="30" rows="10"></textarea>
+                        <textarea style="width: 70%;" id="decription" cols="30" rows="10"></textarea>
                     </td>
                 </tr>
                 <tr>
@@ -66,11 +66,11 @@
                 </tr>
                 <tr>
                     <td>
-                        <label for="">Bank</label>
+                        <label for="bank_name">Bank</label>
                     </td>
                     <td style="width: 30px; padding: 5px 0; text-align: center;">:</td>
                     <td>
-                        <input style="width: 70%;" value="HSBC" type="text" list="bank">
+                        <input style="width: 70%;" value="HSBC" id="bank_name" type="text" list="bank">
                         <datalist id="bank">
                             <option value="BCA"></option>
                             <option value="BRI"></option>
@@ -81,20 +81,20 @@
                 </tr>
                 <tr>
                     <td>
-                        <label for="">Account Holder</label>
+                        <label for="acc_holder">Account Holder</label>
                     </td>
                     <td style="width: 30px; padding: 5px 0; text-align: center;">:</td>
                     <td>
-                        <input style="width: 70%;" value="Rul Haxor" type="text">
+                        <input style="width: 70%;" value="Rul Haxor" id="acc_holder" type="text">
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <label for="">Transaction</label>
+                        <label for="transaction">Transaction</label>
                     </td>
                     <td style="width: 30px; padding: 5px 0; text-align: center;">:</td>
                     <td>
-                        <input type="number" min="1" max="10" value="1">
+                        <input type="number" min="1" max="10" value="1" id="transaction">
                     </td>
                 </tr>
                 <tr>
@@ -109,7 +109,7 @@
                     <td></td>
                     <td style="padding: 2px 0;">
                         <input type="checkbox" style="background-color: green;">
-                        <label for="" style="color: green;">Send to Mobile Phone</label>
+                        <label style="color: green;">Send to Mobile Phone</label>
                     </td>
                 </tr>
                 <tr>
@@ -117,25 +117,25 @@
                     <td></td>
                     <td style="padding: 2px 0;">
                         <input type="checkbox" style="background-color: green;">
-                        <label for="" style="color: green;">Send to Email</label>
+                        <label style="color: green;">Send to Email</label>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <label for="">Send to Mobile Phone</label>
+                        <label for="phone">Send to Mobile Phone</label>
                     </td>
                     <td style="width: 30px; padding: 5px 0; text-align: center;">:</td>
                     <td>
-                        <input style="width: 70%;" value="628123456789" type="tel">
+                        <input style="width: 70%;" value="628123456789" id="phone" type="tel">
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <label for="">Send to Email</label>
+                        <label for="email">Send to Email</label>
                     </td>
                     <td style="width: 30px; padding: 5px 0; text-align: center;">:</td>
                     <td>
-                        <input style="width: 70%;" value="rulhaxor12@rocketmail.com" type="email">
+                        <input style="width: 70%;" value="rulhaxor12@rocketmail.com" id="email" type="email">
                     </td>
                 </tr>
                 <tr>
