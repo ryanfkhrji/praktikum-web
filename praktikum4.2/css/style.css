@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(230, 230, 230);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+}
+
+nav div h2 {
+    margin: 0 50px 0 0;
+    padding: 0;
+}
+
+nav div ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav div ul li .category {
+    margin: 0 20px;
+}
+
+nav div .cart {
+    text-decoration: none;
+    color: black;
+}
