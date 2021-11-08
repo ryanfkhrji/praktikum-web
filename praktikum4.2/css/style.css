@@ -23,14 +23,12 @@ nav div {
 
 nav div h2 {
     margin: 0 50px 0 0;
-    padding: 0;
 }
 
 nav div ul {
     display: flex;
     align-items: center;
     list-style: none;
-    padding: 0;
 }
 
 nav div ul li .category {
@@ -40,4 +38,116 @@ nav div ul li .category {
 nav div .cart {
     text-decoration: none;
     color: black;
+}
+
+
+main .main_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+main div .sec_left {
+    width: 900px;
+}
+
+main div .sec_left p {
+    margin: 15px 0;
+}
+
+main div .sec_left h1, main div .sec_left h2 {
+    margin: 20px 0;
+}
+
+main div .sec_left hr {
+    margin: 15px 0;
+}
+
+main div .sec_left .left_wrap {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row-gap: 30px;
+}
+
+main div .sec_left .left_wrap div p {
+    margin: 5px 0;
+}
+
+main div .sec_right {
+    background-color: rgb(230, 230, 230);
+    padding: 30px;
+}
+
+main div .sec_right h3 {
+    padding: 10px 0;
+}
+
+main div .sec_right table {
+    width: 270px;
+}
+
+main div .sec_right table tbody tr td {
+    padding: 5px 0;
+}
+
+main div .sec_right table tbody tr td.price {
+    text-align: end;
+}
+
+main div .sec_right table tbody tr td input {
+    padding: 7px 0;
+}
+
+main div .sec_right table tbody tr td button {
+    padding: 7px 20px;
+}
+
+main div .sec_right table tbody tr td hr {
+    margin: 10px 0;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+footer .left_nav {
+    display: flex;
+    align-items: center;
+}
+
+footer .left_nav h4 {
+    margin-right: 30px;
+}
+
+footer .left_nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+footer .left_nav ul li a {
+    margin: 0 10px;
+}
+
+footer .right_nav p {
+    margin: 2px 0;
+}
+
+footer .right_nav div input {
+    padding: 5px;
+}
+
+footer .right_nav div button {
+    padding: 5px;
+    background-color: grey;
+    font-weight: bold;
+    color: white;
 }
