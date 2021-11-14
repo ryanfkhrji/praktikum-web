@@ -8,58 +8,48 @@
 </head>
 <style>
     * {
+        margin: 0;
+        padding: 0;
+    }
+    main {
+        width: 1300px;
+        max-height: 100vh;
+        margin: auto;
+        padding: 20px;
+    }
+    .yellow, .orange, .green, .blue {
+        width: 305px;
+        height: 600px;
+        float: left;
+        margin: 10px;
+        border: 1px solid #000;
         box-sizing: border-box;
     }
-    .container {
-        height: 600px;
-        margin: 0 auto;
-        border: 1px solid #000;
-    }
     .yellow {
-        position: relative;
-        top: 50px;
-        background: yellow;
-        border: 1px solid #000;
-        margin: 0 22px;
-        padding: 15em 7.3em;
-        float: left;
+        background-color: yellow;
     }
     .orange {
-        position: relative;
-        top: 50px;
-        background: orange;
-        border: 1px solid #000;
-        margin: 0 22px;
-        padding: 15em 7.3em;
-        float: left;
+        background-color: orangered;
     }
     .green {
-        position: relative;
-        top: 50px;
-        background: green;
-        border: 1px solid #000;
-        margin: 0 22px;
-        padding: 15em 7.3em;
-        float: left;
+        background-color: green;
     }
     .blue {
-        position: relative;
-        top: 50px;
-        background: blue;
-        border: 1px solid #000;
-        margin: 0 22px;
-        padding: 15em 7.3em;
-        float: left;
+        background-color: aqua;
+    }
+    .cf {
+        clear: both;
     }
 </style>
 <body>
     
-    <div class="container">
-        <div class="yellow">Yellow</div>
-        <div class="orange">ORANGE</div>
-        <div class="green">GREEN</div>
-        <div class="blue">BLUE</div>
-    </div>
+    <main>
+        <div class="yellow"></div>
+        <div class="orange"></div>
+        <div class="green"></div>
+        <div class="blue"></div>
+        <div class="cf"></div>
+    </main>
 
 </body>
 </html>

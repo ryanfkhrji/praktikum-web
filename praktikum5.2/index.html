@@ -8,45 +8,65 @@
 </head>
 <style>
     * {
+        margin: 0;
+        padding: 0;
         box-sizing: border-box;
     }
-    .container {
-        height: 600px;
-        margin: 20px;
-        border: 1px solid #000;
+    main {
+        width: 1300px;
+        max-height: 100vh;
+        margin: auto;
+        padding: 20px;
     }
     .full {
         width: 100%;
         height: 150px;
-        background: green;
-        margin-bottom: 30px;
+        background-color: green;
+        border: 1px solid #000;
+    }
+    .fl {
+        float: left;
+    }
+    .fr {
+        float: right;
     }
     .kotak {
         width: 200px;
         height: 200px;
-        float: left;
-        background: yellow;
+        background-color: yellow;
+        border: 1px solid #000;
+        margin-top: 40px;
     }
-    .pPanjang {
-        width: 70%;
+    .panjang {
         height: 200px;
+        width: 1000px;
+        border: 1px solid #000;
+        margin-top: 40px;
     }
-    .red {
-        background: red;
+    .orange {
+        background-color: orangered;
     }
     .blue {
-        background: blue;
+        background-color: blue;
+    }
+    .cf {
+        clear: both;
     }
 </style>
 <body>
     
-    <div class="container">
-        <div class="full">Panjang Banget</div>
-        <div class="kotak">Kotak</div>
-        <div class="pPanjang red">Persegi Panjang</div>
-        <div class="kotak">Kotak</div>
-        <div class="pPanjang blue">Persegi Panjang</div>
-    </div>
+    <main>
+        <div class="full green"></div>
+        <div class="fl">
+            <div class="kotak"></div>
+            <div class="kotak"></div>
+        </div>
+        <div class="fr">
+            <div class="panjang orange"></div>
+            <div class="panjang blue"></div>
+        </div>
+        <div class="cf"></div>
+    </main>
 
 </body>
 </html>
