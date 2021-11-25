@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 6.3</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding: 20px 50px;
+            background-color: pink;
+        }
+
+        .flex {
+            display: flex;
+            margin: 20px 0;
+        }
+
+        .gap {
+            gap: 20px;
+        }
+
+        header, footer {
+            height: 100px;
+            width: 100%;
+            background-color: aquamarine;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        aside {
+            height: 380px;
+            width: 400px;
+            background-color: blue;
+            text-align: center;
+            line-height: 400px;
+        }
+
+        article {
+            height: 380px;
+            width: 900px;
+            background-color: palevioletred;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Header</h2>
+    </header>
+    <div class="flex gap">
+        <aside>
+            <h2>Aside</h2>
+        </aside>
+        <article>
+            <h2 style="margin-top: 170px; margin-bottom: 20px;">Article</h2>
+            <div>
+                <img src="mikey.png" style="margin: 0 20px;" width="150" alt="#">
+                <img src="mikey.png" style="margin: 0 20px;" width="150" alt="#">
+                <img src="mikey.png" style="margin: 0 20px;" width="150" alt="#">
+            </div>
+        </article>
+    </div>
+    <footer>
+        <h2>Footer</h2>
+    </footer>
+</body>
+</html>
