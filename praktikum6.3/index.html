@@ -10,64 +10,60 @@
             margin: 0;
             padding: 0;
         }
-
         body {
-            padding: 20px 50px;
-            background-color: pink;
+            background-color: lightcoral;
         }
-
         .flex {
             display: flex;
+            gap: 20px;
             margin: 20px 0;
         }
 
-        .gap {
-            gap: 20px;
+        .container {
+            width: 1300px;
+            padding: 25px;
+            margin: 0 auto;
         }
 
         header, footer {
             height: 100px;
             width: 100%;
-            background-color: aquamarine;
             text-align: center;
             line-height: 100px;
+            background-color: skyblue;
         }
 
         aside {
             height: 380px;
             width: 400px;
-            background-color: blue;
             text-align: center;
-            line-height: 400px;
+            line-height: 380px;
+            background-color: blue;
         }
 
         article {
             height: 380px;
             width: 900px;
-            background-color: palevioletred;
             text-align: center;
+            background-color: palevioletred;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h2>Header</h2>
-    </header>
-    <div class="flex gap">
-        <aside>
-            <h2>Aside</h2>
-        </aside>
-        <article>
-            <h2 style="margin-top: 170px; margin-bottom: 20px;">Article</h2>
-            <div>
-                <img src="mikey.png" style="margin: 0 20px;" width="150" alt="#">
-                <img src="mikey.png" style="margin: 0 20px;" width="150" alt="#">
-                <img src="mikey.png" style="margin: 0 20px;" width="150" alt="#">
-            </div>
-        </article>
+    
+    <div class="container">
+        <header><h2>Header</h2></header>
+        <main class="flex">
+            <aside><h2>Aside</h2></aside>
+            <article>
+                <h2 style="margin-top: 170px; margin-bottom: 20px;">Article</h2>
+                <img style="margin: 0 20px;" src="mikey.png" width="150" alt="">
+                <img style="margin: 0 20px;" src="mikey.png" width="150" alt="">
+                <img style="margin: 0 20px;" src="mikey.png" width="150" alt="">
+            </article>
+        </main>
+        <footer><h2>Footer</h2></footer>
     </div>
-    <footer>
-        <h2>Footer</h2>
-    </footer>
+
 </body>
 </html>
